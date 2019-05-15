@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Teste</title>
+    <style>
+    </style>
+</head>
+<body>
+    <h1 id="demo"></h1>
+    <script>
+        var tempoGlobal = null;
+        var segundos = 60;
+        decrementoSegundos(segundos - 1)
+
+        function decrementoSegundos(tempo) {
+            tempo = tempo + 1;
+            if (tempo == -1) {
+                clearTimeout(tempoGlobal);
+                return false;
+            }
+            document.getElementById("demo").innerHTML = tempo;
+            tempoGlobal = setTimeout("decrementoSegundos("+tempo+")", 1000);
+
+        }
+           
+    </script>
+</body>
+</html>

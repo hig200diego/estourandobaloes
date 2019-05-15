@@ -1,0 +1,37 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    float: left;
+    width: auto;
+    height: 500px;
+    border: 1px solid #a2a2a2;
+    margin-right: 5px;
+}
+
+.cenario {
+    float: left;
+    width: 600px;
+    height: 500px;
+    background: url('../estourando_baloes/imagens/cenario.png');
+    background-position: bottom;
+}
+
+.qtd-inteiros {
+    font-size: 40px;
+}
+
+.qtd-estourados {
+    font-size: 40px;
+}
+
+.cronometro-estilo {
+    color: red;
+    font-size: 30px;
+}
+
+.cronometro-align {
+    text-align: center;
+}
